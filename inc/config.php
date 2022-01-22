@@ -5,5 +5,7 @@
     }
 
     // Connect to the DB
-    require_once "classes/DB.php";
+    include_once "classes/DB.php";
+
+    $conn = DB::getConnection();
 ?>
