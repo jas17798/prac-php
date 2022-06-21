@@ -24,8 +24,14 @@
       ?>
       <a href="login.php">Login Here</a>
       <a href="register.php">Register Here</a>
+      <br>
+      <a href="pdf/Design_Patterns.pdf" target="_blank">View PDF</a>
+      <a href="new.php">View New PDF Page</a>
     </div>
 
+    <iframe frameborder="0" scrolling="no" style="border:0px" src="pdf/Design_Patterns.pdf" width="800" height=500 download="no">
+    
+    </iframe>
     <?php  require_once "footer.php" ; ?>
     
 </body>
