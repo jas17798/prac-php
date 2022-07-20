@@ -24,6 +24,11 @@ class A {
 class B {
     use hello;
     use bye;
+
+    public function getGreet()
+    {
+        return $this->sayHi();
+    }
 }
 
     $test = new A();
@@ -33,6 +38,6 @@ $test->sayHello();
 $test->saybye();
 $test2->sayHello();
 $test2->saybye();
-
+$test2->getGreet();
 $test->sayHi();
 ?>
