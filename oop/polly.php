@@ -7,23 +7,31 @@
     class german extends person {
 
         public function greet(){
-            echo "Hallo!";
+            echo "Hallo! <br>";
         }
     }
 
     class english extends person {
 
         public function greet(){
-            echo "Hello!";
+            echo "Hello! <br>";
         }
     }
 
     class french extends person {
 
         public function greet(){
-            echo "Bonjour!";
+            echo "Bonjour! <br>";
         }
     }
+
+    class american extends person {
+
+        public function greet(){
+            echo "HIIIIII <br>";
+        }
+    }
+
 
     function greeting($people)
     {
@@ -36,7 +44,8 @@
     $people = [
         new german(),
         new english(),
-        new french()
+        new french(),
+        new american()
     ];
 
     

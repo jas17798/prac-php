@@ -5,7 +5,7 @@
 class base{
     // public $name = "Yahoo BaBA";
     public static $name = "Yahoo BaBA";
-
+    protected static $age = 30;
     // public function show()
     public static function show()
     {
@@ -13,6 +13,11 @@ class base{
         echo "<br>" . self::$name; // use static variable in same class. 
     }
 
+    public function getAge()
+    {
+        echo self::$age;
+        echo static::$age;
+    }
     // public function __construct($n)
     // {
     //     self::$name = $n;
@@ -21,7 +26,7 @@ class base{
 }
 
 class derived extends base{
-
+    protected static $age = 50;
     public static function show()
     {
         echo "<br>" . parent::$name; // use static variable in derived class. 
@@ -37,4 +42,7 @@ class derived extends base{
 
 $test2 = new derived();
 $test2->show();
+
+$test2->getAge();
 ?>
+
